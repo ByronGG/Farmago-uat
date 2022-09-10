@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "981720514224",
+    "project_id": "farmago-uat",
+    "storage_bucket": "farmago-uat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981720514224:android:46afad1bf2b3f7448cc575",
+        "android_client_info": {
+          "package_name": "com.example.farmago_uat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981720514224-gpn57fi1hsk1arqv50iujlg6lq58c6ot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5yCfkCf2QzdW4ZTF0NO1BZllP59ilxZk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "981720514224-gpn57fi1hsk1arqv50iujlg6lq58c6ot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
