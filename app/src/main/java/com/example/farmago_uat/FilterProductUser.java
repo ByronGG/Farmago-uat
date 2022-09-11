@@ -7,7 +7,8 @@ import com.example.farmago_uat.models.ModelProduct;
 
 import java.util.ArrayList;
 
-public class FilterProductUser {private AdapterProductUser adapter;
+public class FilterProductUser extends Filter{
+    private AdapterProductUser adapter;
     private ArrayList<ModelProduct> filterList;
 
     public FilterProductUser(AdapterProductUser adapter, ArrayList<ModelProduct> filterList) {

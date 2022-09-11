@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.MainUserActivity">
+
     <!--Toolbar-->
     <RelativeLayout
         android:id="@+id/toolbarRl"
@@ -106,36 +107,37 @@
 
     </RelativeLayout>
 
-<!--    &lt;!&ndash;Shops UI&ndash;&gt;-->
-<!--    <RelativeLayout-->
-<!--        android:id="@+id/shopsRl"-->
-<!--        android:layout_below="@id/toolbarRl"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent">-->
-<!--        <androidx.recyclerview.widget.RecyclerView-->
-<!--            android:id="@+id/shopsRv"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
-<!--            tools:listitem="@layout/row_shop"/>-->
-<!--    </RelativeLayout>-->
+    <!--Shops UI-->
+    <RelativeLayout
+        android:id="@+id/shopsRl"
+        android:layout_below="@id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/shopsRv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/row_shop"/>
+    </RelativeLayout>
 
-<!--    &lt;!&ndash;Orders UI&ndash;&gt;-->
-<!--    <RelativeLayout-->
-<!--        android:visibility="gone"-->
-<!--        android:id="@+id/ordersRl"-->
-<!--        android:layout_below="@id/toolbarRl"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent">-->
-<!--        &lt;!&ndash;reccyclerview: show orders(newest first)&ndash;&gt;-->
-<!--        <androidx.recyclerview.widget.RecyclerView-->
-<!--            android:id="@+id/ordersRv"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            app:stackFromEnd="true"-->
-<!--            app:reverseLayout="true"-->
-<!--            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
-<!--            tools:listitem="@layout/row_order_user"/>-->
+    <!--Orders UI-->
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/ordersRl"
+        android:layout_below="@id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--reccyclerview: show orders(newest first)-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ordersRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:stackFromEnd="true"
+            app:reverseLayout="true"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/row_order_user"/>
 
-<!--    </RelativeLayout>-->
+    </RelativeLayout>
+
 </RelativeLayout>

@@ -15,6 +15,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.farmago_uat.R;
+import com.example.farmago_uat.adapters.AdapterOrderUser;
+import com.example.farmago_uat.adapters.AdapterShop;
 import com.example.farmago_uat.models.ModelOrderUser;
 import com.example.farmago_uat.models.ModelShop;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -149,7 +151,7 @@ public class MainUserActivity extends AppCompatActivity {
         progressDialog.setMessage("Logging Out...");
 
         HashMap<String, Object> hashMap = new HashMap<>();
-        hashMap.put("online", "false");
+        hashMap.put("online","false");
 
         //update value to db
         DatabaseReference ref = FirebaseDatabase.getInstance().getReference("Users");
@@ -167,17 +169,18 @@ public class MainUserActivity extends AppCompatActivity {
                     public void onFailure(@NonNull Exception e) {
                         //failed updating
                         progressDialog.dismiss();
-                        Toast.makeText(MainUserActivity.this, "" + e.getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainUserActivity.this, ""+e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
     }
 
     private void checkUser() {
         FirebaseUser user = firebaseAuth.getCurrentUser();
-        if (user == null) {
+        if (user == null){
             startActivity(new Intent(MainUserActivity.this, LoginActivity.class));
             finish();
-        } else {
+        }
+        else {
             loadMyInfo();
         }
     }
@@ -188,14 +191,14 @@ public class MainUserActivity extends AppCompatActivity {
                 .addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        for (DataSnapshot ds : dataSnapshot.getChildren()) {
+                        for (DataSnapshot ds: dataSnapshot.getChildren()){
                             //get user data
-                            String name = "" + ds.child("name").getValue();
-                            String email = "" + ds.child("email").getValue();
-                            String phone = "" + ds.child("phone").getValue();
-                            String profileImage = "" + ds.child("profileImage").getValue();
-                            String accountType = "" + ds.child("accountType").getValue();
-                            String city = "" + ds.child("city").getValue();
+                            String name = ""+ds.child("name").getValue();
+                            String email = ""+ds.child("email").getValue();
+                            String phone = ""+ds.child("phone").getValue();
+                            String profileImage = ""+ds.child("profileImage").getValue();
+                            String accountType = ""+ds.child("accountType").getValue();
+                            String city = ""+ds.child("city").getValue();
 
                             //set user data
                             nameTv.setText(name);
@@ -203,7 +206,8 @@ public class MainUserActivity extends AppCompatActivity {
                             phoneTv.setText(phone);
                             try {
                                 Picasso.get().load(profileImage).placeholder(R.drawable.ic_person_gray).into(profileIv);
-                            } catch (Exception e) {
+                            }
+                            catch (Exception e){
                                 profileIv.setImageResource(R.drawable.ic_person_gray);
                             }
 

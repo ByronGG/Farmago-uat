@@ -7,7 +7,7 @@ import com.example.farmago_uat.models.ModelOrderShop;
 
 import java.util.ArrayList;
 
-public class FilterOrderShop {
+public class FilterOrderShop extends Filter{
     private AdapterOrderShop adapter;
     private ArrayList<ModelOrderShop> filterList;
 

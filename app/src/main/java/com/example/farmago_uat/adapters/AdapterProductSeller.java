@@ -20,6 +20,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.farmago_uat.FilterProduct;
 import com.example.farmago_uat.R;
+import com.example.farmago_uat.activities.EditProductActivity;
 import com.example.farmago_uat.models.ModelProduct;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
