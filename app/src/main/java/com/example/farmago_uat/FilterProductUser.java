@@ -23,7 +23,6 @@ public class FilterProductUser extends Filter{
         //validate data for search query
         if (constraint != null && constraint.length() > 0){
             //search filed not empty, searching something, perform search
-
             //change to upper case, to make case insensitive
             constraint = constraint.toString().toUpperCase();
             //store our filtered list

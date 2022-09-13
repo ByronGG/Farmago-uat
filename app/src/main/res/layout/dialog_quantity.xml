@@ -21,11 +21,11 @@
             android:id="@+id/titleTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_below="@id/productIv"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:text="Product Title"
-            android:textColor="@color/colorWhite"/>
+            android:text="Titulo del productol"
+            android:textColor="@color/colorWhite" />
 
         <TextView
             android:id="@+id/pQuantityTv"
@@ -41,11 +41,11 @@
             android:id="@+id/descriptionTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_below="@id/pQuantityTv"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:text="Product Description"
-            android:textColor="@color/colorWhite"/>
+            android:text="Descripcion del producto"
+            android:textColor="@color/colorWhite" />
 
         <TextView
             android:id="@+id/discountedNoteTv"
@@ -90,11 +90,11 @@
             android:id="@+id/finalPriceTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
             android:layout_alignParentEnd="true"
-            android:text="Final Price"
+            android:padding="10dp"
+            android:text="Precio final"
             android:textAlignment="textStart"
-            android:textColor="@color/colorBlack"/>
+            android:textColor="@color/colorBlack" />
 
 
 
@@ -142,7 +142,7 @@
         android:layout_marginTop="20dp"
         android:background="@color/colorPrimary"
         android:padding="5dp"
-        android:text="Add To Cart"
+        android:text="Agregar al carrito"
         android:textColor="@color/colorWhite"
         android:textAllCaps="false"/>
 </LinearLayout>

@@ -24,10 +24,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="Register User"
-            android:textStyle="bold"
+            android:text="Registrar Usuario"
+            android:textColor="@color/colorWhite"
             android:textSize="20sp"
-            android:textColor="@color/colorWhite"/>
+            android:textStyle="bold" />
 
         <ImageButton
             android:id="@+id/gpsBtn"
@@ -63,29 +63,35 @@
 
     <EditText
         android:id="@+id/nameEt"
-        android:layout_below="@+id/profileIv"
-        android:hint="Full Name"
-        android:padding="10dp"
-        android:drawableStart="@drawable/ic_person_gray"
-        android:drawablePadding="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_below="@+id/profileIv"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shapre_rect02"
+        android:drawableStart="@drawable/ic_person_gray"
+        android:drawablePadding="5dp"
+        android:hint="Nombre Completo"
         android:inputType="textPersonName|textCapWords"
-        android:background="@drawable/shapre_rect02"/>
+        android:padding="10dp" />
 
     <EditText
         android:id="@+id/phoneEt"
-        android:layout_below="@+id/nameEt"
-        android:hint="Phone"
-        android:padding="10dp"
-        android:drawableStart="@drawable/ic_phone_gray"
-        android:drawablePadding="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_below="@+id/nameEt"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shapre_rect02"
+        android:drawableStart="@drawable/ic_phone_gray"
+        android:drawablePadding="5dp"
+        android:hint="Telefono"
         android:inputType="phone"
-        android:background="@drawable/shapre_rect02"/>
+        android:padding="10dp" />
 
     <LinearLayout
         android:id="@+id/addressLl"
@@ -95,7 +101,7 @@
         android:orientation="horizontal">
         <EditText
             android:id="@+id/countryEt"
-            android:hint="Country"
+            android:hint="Pais"
             android:padding="10dp"
             android:drawableStart="@drawable/ic_location_gray"
             android:drawablePadding="5dp"
@@ -107,7 +113,7 @@
             android:background="@drawable/shapre_rect02"/>
         <EditText
             android:id="@+id/stateEt"
-            android:hint="State"
+            android:hint="Estado"
             android:padding="10dp"
             android:drawableStart="@drawable/ic_location_gray"
             android:drawablePadding="5dp"
@@ -119,7 +125,7 @@
             android:background="@drawable/shapre_rect02"/>
         <EditText
             android:id="@+id/cityEt"
-            android:hint="City"
+            android:hint="Ciudad"
             android:padding="10dp"
             android:drawableStart="@drawable/ic_location_gray"
             android:drawablePadding="5dp"
@@ -133,57 +139,71 @@
 
     <EditText
         android:id="@+id/addressEt"
-        android:layout_below="@+id/addressLl"
-        android:hint="Complete Address"
-        android:padding="10dp"
-        android:drawableStart="@drawable/ic_location_gray"
-        android:drawablePadding="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_below="@+id/addressLl"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shapre_rect02"
+        android:drawableStart="@drawable/ic_location_gray"
+        android:drawablePadding="5dp"
+        android:hint="Direccion completa"
         android:inputType="textPostalAddress|textMultiLine"
-        android:background="@drawable/shapre_rect02"/>
+        android:padding="10dp" />
 
     <EditText
         android:id="@+id/emailEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/addressEt"
-        android:hint="Email"
-        android:padding="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shapre_rect02"
         android:drawableStart="@drawable/ic_mail_gray"
         android:drawablePadding="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:hint="Correo"
         android:inputType="textEmailAddress"
-        android:background="@drawable/shapre_rect02"/>
+        android:padding="10dp" />
+
     <EditText
         android:id="@+id/passwordEt"
-        android:layout_below="@+id/emailEt"
-        android:hint="Password"
-        android:padding="10dp"
-        android:drawableStart="@drawable/ic_lock_gray"
-        android:drawablePadding="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_below="@+id/emailEt"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shapre_rect02"
+        android:drawableStart="@drawable/ic_lock_gray"
+        android:drawablePadding="5dp"
+        android:hint="Contraseña"
         android:inputType="textPassword"
-        android:background="@drawable/shapre_rect02"/>
+        android:padding="10dp" />
+
     <EditText
         android:id="@+id/cPasswordEt"
-        android:layout_below="@+id/passwordEt"
-        android:hint="Confirm Password"
-        android:padding="10dp"
-        android:drawableStart="@drawable/ic_lock_gray"
-        android:drawablePadding="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_below="@+id/passwordEt"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/shapre_rect02"
+        android:drawableStart="@drawable/ic_lock_gray"
+        android:drawablePadding="5dp"
+        android:hint="Confirmar Contraseña"
         android:inputType="textPassword"
-        android:background="@drawable/shapre_rect02"/>
+        android:padding="10dp" />
 
     <Button
         android:id="@+id/registerBtn"
-        android:text="Register"
+        android:text="Registro"
         style="@style/Widget.AppCompat.Button.Colored"
         android:minWidth="120dp"
         android:layout_centerHorizontal="true"
@@ -196,7 +216,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:text="Are you a seller? Register as Seller"
+        android:text="¿Eres un vendedor? Registrate como vendedor"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"/>
 

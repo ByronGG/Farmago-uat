@@ -26,11 +26,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Settings"
             android:layout_centerHorizontal="true"
+            android:text="Ajustes"
             android:textColor="@color/colorWhite"
             android:textSize="20sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -46,20 +46,20 @@
             android:paddingStart="10dp"
             android:paddingTop="10dp"
             android:paddingEnd="10dp"
-            android:text="Push Notifications"/>
+            android:text="Activar Notificaciones" />
 
         <!--notification status: enabled/disabled-->
         <TextView
             android:id="@+id/notificationStatusTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@id/fcmSwitch"
             android:background="@color/colorWhite"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
             android:paddingBottom="10dp"
-            android:layout_below="@id/fcmSwitch"
-            android:text="Notifications are disabled"
-            android:textColor="@color/colorGray02"/>
+            android:text="Las notificaciones estan desactivadas"
+            android:textColor="@color/colorGray02" />
 
         <View
             android:layout_width="match_parent"

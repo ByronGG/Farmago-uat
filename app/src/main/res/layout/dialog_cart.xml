@@ -65,10 +65,10 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:padding="5dp"
-                    android:text="Promotion Code"
+                    android:text="CUPON"
                     android:textColor="@color/colorPrimary"
                     android:textSize="16sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/promoCodeEt"
@@ -77,11 +77,11 @@
                     android:layout_below="@id/promoLabelTv"
                     android:layout_marginEnd="5dp"
                     android:layout_toStartOf="@id/validateBtn"
-                    android:hint="Promo Code"
+                    android:hint="Codigo Cupon"
                     android:padding="10dp"
                     android:textColor="@color/colorBlack"
                     android:textColorHint="@color/colorGray01"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/validateBtn"
@@ -99,11 +99,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/promoCodeEt"
-                    android:hint="Promo Code Description"
+                    android:hint="Decripcion del cupon"
                     android:padding="10dp"
                     android:textColor="@color/colorBlack"
                     android:textColorHint="@color/colorGray01"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp" />
 
                 <Button
                     android:id="@+id/applyBtn"
@@ -111,8 +111,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/promoDescriptionTv"
-                    android:text="Apply"
-                    android:textColor="@color/colorWhite"/>
+                    android:text="Aplicar"
+                    android:textColor="@color/colorWhite" />
 
 
             </RelativeLayout>
@@ -145,9 +145,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/sTotalLabelTv"
                 android:padding="5dp"
-                android:text="Discount"
+                android:text="Descuento"
                 android:textColor="@color/colorBlack"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/discountTv"

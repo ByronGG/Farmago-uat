@@ -32,52 +32,55 @@
 
             <TextView
                 android:id="@+id/shopNameTv"
+                style="@style/TextAppearance.AppCompat.Title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/TextAppearance.AppCompat.Title"
-                android:text="Shop Name"
-                android:textColor="@color/colorWhite"
-                android:layout_margin="3dp"/>
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="3dp"
+                android:text="Nombre de la tienda"
+                android:textColor="@color/colorWhite" />
 
 
             <TextView
                 android:id="@+id/phoneTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Phone"
                 android:layout_below="@+id/shopNameTv"
-                android:textColor="@color/colorWhite"
-                android:layout_marginStart="3dp"/>
+                android:layout_marginStart="3dp"
+                android:text="Telefono"
+                android:textColor="@color/colorWhite" />
 
             <TextView
                 android:id="@+id/emailTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Email"
                 android:layout_below="@+id/phoneTv"
-                android:textColor="@color/colorWhite"
-                android:layout_marginStart="3dp"/>
+                android:layout_marginStart="3dp"
+                android:text="Correo"
+                android:textColor="@color/colorWhite" />
 
             <TextView
                 android:id="@+id/openCloseTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Open"
                 android:layout_alignParentEnd="true"
+                android:layout_marginStart="3dp"
                 android:padding="5dp"
-                android:textColor="@color/colorWhite"
-                android:layout_marginStart="3dp"/>
+                android:text="Abierto"
+                android:textColor="@color/colorWhite" />
 
             <TextView
                 android:id="@+id/deliveryFeeTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Delivery Fee"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="3dp"
                 android:layout_below="@id/openCloseTv"
-                android:textColor="@color/colorWhite"
-                android:layout_marginStart="3dp"/>
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="3dp"
+                android:text="Entrega gratis"
+                android:textColor="@color/colorWhite" />
 
             <!--Ratingbar: show avg rating-->
             <RatingBar
@@ -95,11 +98,11 @@
                 android:id="@+id/addressTv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Address"
                 android:layout_below="@+id/emailTv"
-                android:textColor="@color/colorWhite"
                 android:layout_marginStart="3dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:text="Direccion"
+                android:textColor="@color/colorWhite" />
 
             <LinearLayout
                 android:layout_alignParentBottom="true"
@@ -157,11 +160,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="Shop Details"
+            android:layout_centerInParent="true"
+            android:text="Detalles de la tienda"
             android:textColor="@color/colorWhite"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
         <!--cart item count badge-->
         <TextView
@@ -197,13 +199,16 @@
             android:id="@+id/searchProductEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_toStartOf="@id/filterProductBtn"
             android:background="@drawable/shapre_rect02"
             android:drawableStart="@drawable/ic_search_gray"
             android:drawablePadding="10dp"
-            android:hint="Search"
-            android:padding="10dp"/>
+            android:hint="Buscar"
+            android:padding="10dp" />
         <!--filter products-->
         <ImageButton
             android:id="@+id/filterProductBtn"
@@ -223,7 +228,7 @@
             android:layout_below="@+id/searchProductEt"
             android:layout_marginStart="5dp"
             android:layout_marginBottom="5dp"
-            android:text="Showing All"
+            android:text="Mostrar todo"
             android:textColor="@color/colorBlack" />
         <!--Recyclerview: show products-->
         <androidx.recyclerview.widget.RecyclerView

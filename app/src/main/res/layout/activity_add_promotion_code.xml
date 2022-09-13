@@ -26,12 +26,11 @@
             android:id="@+id/titleTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="Add Promotion Code"
+            android:layout_centerInParent="true"
+            android:text="Agregar Cupon"
+            android:textColor="@color/colorWhite"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@color/colorWhite"/>
+            android:textStyle="bold" />
 
     </RelativeLayout>
 
@@ -49,58 +48,72 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageIv"
-        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/shapre_rect02"
         android:drawableStart="@drawable/ic_discount_gray"
         android:drawablePadding="5dp"
-        android:hint="Promotion Code"
+        android:hint="Codigo de promoción"
         android:inputType="textCapWords"
         android:padding="10dp"
         android:textColor="@color/colorBlack"
-        android:textColorHint="@color/colorGray02"/>
+        android:textColorHint="@color/colorGray02" />
 
     <EditText
         android:id="@+id/promoDescriptionEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/promoCodeEt"
-        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/shapre_rect02"
         android:drawableStart="@drawable/ic_discount_gray"
         android:drawablePadding="5dp"
-        android:hint="Promotion Description"
+        android:hint="Descripción de la promoción"
         android:inputType="textCapSentences|textMultiLine"
         android:padding="10dp"
         android:textColor="@color/colorBlack"
-        android:textColorHint="@color/colorGray02"/>
+        android:textColorHint="@color/colorGray02" />
+
     <EditText
         android:id="@+id/promoPriceEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/promoDescriptionEt"
-        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/shapre_rect02"
         android:drawableStart="@drawable/ic_cart_gray"
         android:drawablePadding="5dp"
-        android:hint="Promotion Price"
+        android:hint="Precio de la promoción"
         android:inputType="numberDecimal"
         android:padding="10dp"
         android:textColor="@color/colorBlack"
-        android:textColorHint="@color/colorGray02"/>
+        android:textColorHint="@color/colorGray02" />
+
     <EditText
         android:id="@+id/minimumOrderPriceEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/promoPriceEt"
-        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/shapre_rect02"
         android:drawableStart="@drawable/ic_cart_gray"
         android:drawablePadding="5dp"
-        android:hint="Minimum Order Price"
+        android:hint="Precio minimo de pedido"
         android:inputType="numberDecimal"
         android:padding="10dp"
         android:textColor="@color/colorBlack"
-        android:textColorHint="@color/colorGray02"/>
+        android:textColorHint="@color/colorGray02" />
     <TextView
         android:id="@+id/expireDateTv"
         android:layout_width="match_parent"
@@ -110,7 +123,7 @@
         android:background="@drawable/shapre_rect02"
         android:drawableStart="@drawable/ic_calendar_gray"
         android:drawablePadding="5dp"
-        android:hint="Expire Date"
+        android:hint="Expira"
         android:gravity="center_vertical"
         android:padding="10dp"
         android:textColor="@color/colorBlack"
@@ -124,7 +137,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"
         android:minWidth="150dp"
-        android:text="Add"
+        android:text="Añadir"
         style="@style/Widget.AppCompat.Button.Colored"/>
 
 </RelativeLayout>

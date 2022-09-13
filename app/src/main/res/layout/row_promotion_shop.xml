@@ -25,18 +25,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/iconIv"
-            android:text="Promotion Code"
+            android:text="Codigo del cupon"
             android:textColor="@color/colorPrimary"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/promoPriceLabelTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/iconIv"
             android:layout_below="@id/promoCodeTv"
-            android:text="Promotion Price: $"
-            android:textColor="@color/colorBlack"/>
+            android:layout_toEndOf="@id/iconIv"
+            android:text="Valor del cupon: $"
+            android:textColor="@color/colorBlack" />
 
         <TextView
             android:id="@+id/promoPriceTv"
@@ -51,10 +51,10 @@
             android:id="@+id/minimumOrderPriceLabelTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/iconIv"
             android:layout_below="@id/promoPriceTv"
-            android:text="Minimum Order Price: $"
-            android:textColor="@color/colorBlack"/>
+            android:layout_toEndOf="@id/iconIv"
+            android:text="Minimo de orden: $"
+            android:textColor="@color/colorBlack" />
 
         <TextView
             android:id="@+id/minimumOrderPriceTv"
@@ -78,11 +78,11 @@
             android:id="@+id/descriptionTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/iconIv"
             android:layout_below="@id/expireDateTv"
-            android:text="The description of the promotion code, max 2 lines."
+            android:layout_toEndOf="@id/iconIv"
             android:maxLines="2"
-            android:textColor="@color/colorBlack"/>
+            android:text="Descripcion corta, max 2 lines."
+            android:textColor="@color/colorBlack" />
 
         <ImageView
             android:layout_width="wrap_content"

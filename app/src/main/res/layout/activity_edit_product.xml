@@ -24,10 +24,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="Edit Product"
+            android:text="Editar Producto"
             android:textColor="@color/colorWhite"
             android:textSize="20sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
     </RelativeLayout>
 
     <!--Form to input data-->
@@ -50,67 +50,82 @@
             android:id="@+id/titleEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:hint="Title"
+            android:layout_below="@id/productIconIv"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:background="@drawable/shapre_rect02"
             android:drawableStart="@drawable/ic_title_gray"
             android:drawablePadding="10dp"
+            android:hint="Titulo"
             android:inputType="textPersonName|textCapWords"
-            android:padding="10dp"
-            android:layout_below="@id/productIconIv"/>
+            android:padding="10dp" />
 
         <EditText
             android:id="@+id/descriptionEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:hint="Description"
+            android:layout_below="@id/titleEt"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:background="@drawable/shapre_rect02"
             android:drawableStart="@drawable/ic_title_gray"
             android:drawablePadding="10dp"
+            android:hint="Descripcion"
             android:inputType="textCapSentences|textMultiLine"
-            android:padding="10dp"
-            android:layout_below="@id/titleEt"/>
+            android:padding="10dp" />
 
         <TextView
             android:id="@+id/categoryTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:drawableEnd="@drawable/ic_down_gray"
-            android:hint="Category"
+            android:layout_below="@id/descriptionEt"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:background="@drawable/shapre_rect02"
             android:drawableStart="@drawable/ic_categories_gray"
+            android:drawableEnd="@drawable/ic_down_gray"
             android:drawablePadding="10dp"
+            android:hint="Categoria"
             android:inputType="textCapSentences|textMultiLine"
-            android:padding="10dp"
-            android:layout_below="@id/descriptionEt"/>
+            android:padding="10dp" />
 
         <EditText
             android:id="@+id/quantityEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_below="@id/categoryTv"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:background="@drawable/shapre_rect02"
             android:drawableStart="@drawable/ic_cart_gray"
-            android:hint="Quantity e.g. kg, g etc."
             android:drawablePadding="10dp"
+            android:hint="Cantidad Pza"
             android:inputType="textCapWords"
-            android:padding="10dp"
-            android:layout_below="@id/categoryTv"/>
+            android:padding="10dp" />
 
         <EditText
             android:id="@+id/priceEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_below="@id/quantityEt"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:background="@drawable/shapre_rect02"
             android:drawableStart="@drawable/ic_cart_gray"
-            android:hint="Price"
             android:drawablePadding="10dp"
+            android:hint="Precio"
             android:inputType="numberDecimal"
-            android:padding="10dp"
-            android:layout_below="@id/quantityEt"/>
+            android:padding="10dp" />
 
         <!--Whether or not product on discount-->
         <androidx.appcompat.widget.SwitchCompat
@@ -119,37 +134,43 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_below="@id/priceEt"
-            android:text="Discount"/>
+            android:text="Descuento"/>
 
         <EditText
             android:id="@+id/discountedPriceEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_below="@id/discountSwitch"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:background="@drawable/shapre_rect02"
             android:drawableStart="@drawable/ic_cart_gray"
-            android:hint="Discount Price"
             android:drawablePadding="10dp"
+            android:hint="Precio de descuento"
             android:inputType="numberDecimal"
-            android:padding="10dp"
-            android:layout_below="@id/discountSwitch"/>
+            android:padding="10dp" />
 
         <EditText
             android:id="@+id/discountedNoteEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_below="@id/discountedPriceEt"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
             android:background="@drawable/shapre_rect02"
             android:drawableStart="@drawable/ic_cart_gray"
-            android:hint="Discount Note e.g. 10% Off"
             android:drawablePadding="10dp"
+            android:hint="Definir un descuento ej 20%"
             android:inputType="textCapSentences"
-            android:padding="10dp"
-            android:layout_below="@id/discountedPriceEt"/>
+            android:padding="10dp" />
 
         <Button
             android:id="@+id/updateProductBtn"
-            android:text="Update Product"
+            android:text="Actualizar Productol"
             android:layout_below="@id/discountedNoteEt"
             android:layout_centerHorizontal="true"
             style="@style/Widget.AppCompat.Button.Colored"

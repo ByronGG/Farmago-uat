@@ -63,14 +63,14 @@
             android:id="@+id/nameTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name"
+            android:text="Nombre"
             android:layout_toEndOf="@id/profileIv"
             android:textStyle="bold"
             android:textColor="@color/colorWhite"/>
 
         <TextView
             android:id="@+id/shopNameTv"
-            android:text="Shop Name"
+            android:text="Nombre de la tienda"
             android:textColor="@color/colorWhite"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -79,7 +79,7 @@
 
         <TextView
             android:id="@+id/emailTv"
-            android:text="Email"
+            android:text="correo"
             android:textColor="@color/colorWhite"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/shape_rect04"
                 android:gravity="center"
-                android:text="Products"
+                android:text="Productos"
                 android:textColor="@color/colorBlack"/>
             <!--Orders-->
             <TextView
@@ -112,7 +112,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Orders"
+                android:text="Ordenes"
                 android:textColor="@color/colorWhite"/>
         </LinearLayout>
 
@@ -186,7 +186,7 @@
             android:layout_toStartOf="@id/filterOrderBtn"
             android:background="@drawable/shapre_rect02"
             android:padding="10dp"
-            android:text="Showing All Orders"/>
+            android:text="Mostrar todas las ordenes"/>
         <!--Filter orders-->
         <ImageButton
             android:id="@+id/filterOrderBtn"

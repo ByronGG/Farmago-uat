@@ -25,10 +25,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="Edit Profile"
-            android:textStyle="bold"
+            android:text="Editar Perfil"
+            android:textColor="@color/colorWhite"
             android:textSize="20sp"
-            android:textColor="@color/colorWhite"/>
+            android:textStyle="bold" />
 
         <ImageButton
             android:id="@+id/gpsBtn"
@@ -58,52 +58,64 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/profileIv"
-        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/shapre_rect02"
         android:drawableStart="@drawable/ic_person_gray"
         android:drawablePadding="5dp"
-        android:hint="Full Name"
+        android:hint="Nombre Completo"
         android:inputType="textPersonName|textCapWords"
-        android:padding="10dp"/>
+        android:padding="10dp" />
 
     <EditText
         android:id="@+id/shopNameEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/nameEt"
-        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/shapre_rect02"
         android:drawableStart="@drawable/ic_store_gray"
         android:drawablePadding="5dp"
-        android:hint="Shop Name"
+        android:hint="Nombre de la tienda"
         android:inputType="textPersonName|textCapWords"
-        android:padding="10dp"/>
+        android:padding="10dp" />
 
     <EditText
         android:id="@+id/phoneEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/shopNameEt"
-        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/shapre_rect02"
         android:drawableStart="@drawable/ic_person_gray"
         android:drawablePadding="5dp"
-        android:hint="Phone"
+        android:hint="Telefono"
         android:inputType="phone"
-        android:padding="10dp"/>
+        android:padding="10dp" />
 
     <EditText
         android:id="@+id/deliveryFeeEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/phoneEt"
-        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/shapre_rect02"
         android:drawableStart="@drawable/ic_store_gray"
         android:drawablePadding="5dp"
-        android:hint="Delivery Fee"
+        android:hint="Entrega gratuita"
         android:inputType="numberDecimal"
-        android:padding="10dp"/>
+        android:padding="10dp" />
 
 
     <LinearLayout
@@ -122,7 +134,7 @@
             android:layout_weight="1"
             android:drawableStart="@drawable/ic_location_gray"
             android:drawablePadding="5dp"
-            android:hint="Country"
+            android:hint="Pais"
             android:inputType="textPostalAddress"
             android:padding="10dp" />
 
@@ -135,7 +147,7 @@
             android:layout_weight="1"
             android:drawableStart="@drawable/ic_location_gray"
             android:drawablePadding="5dp"
-            android:hint="State"
+            android:hint="Estado"
             android:inputType="textPostalAddress"
             android:padding="10dp" />
 
@@ -148,7 +160,7 @@
             android:layout_weight="1"
             android:drawableStart="@drawable/ic_location_gray"
             android:drawablePadding="5dp"
-            android:hint="City"
+            android:hint="Ciudad"
             android:inputType="textPostalAddress"
             android:padding="10dp" />
 
@@ -159,28 +171,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/addressLl"
-        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
         android:background="@drawable/shapre_rect02"
         android:drawableStart="@drawable/ic_location_gray"
         android:drawablePadding="5dp"
-        android:hint="Address"
+        android:hint="Direccion"
         android:inputType="textPostalAddress|textMultiLine"
-        android:padding="10dp"/>
+        android:padding="10dp" />
 
     <androidx.appcompat.widget.SwitchCompat
         android:id="@+id/shopOpenSwitch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/addressEt"
-        android:layout_margin="5dp"
-        android:text="Shop Open"/>
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Tienda Abierta" />
 
     <Button
         android:id="@+id/updateBtn"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_below="@id/shopOpenSwitch"
-        android:text="Update"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:text="Actualizar" />
 </RelativeLayout>

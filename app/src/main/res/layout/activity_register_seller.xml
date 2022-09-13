@@ -24,10 +24,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="Register Seller"
-            android:textStyle="bold"
+            android:text="Registro vendedor"
+            android:textColor="@color/colorWhite"
             android:textSize="20sp"
-            android:textColor="@color/colorWhite"/>
+            android:textStyle="bold" />
 
         <ImageButton
             android:id="@+id/gpsBtn"
@@ -69,55 +69,67 @@
 
             <EditText
                 android:id="@+id/nameEt"
-                android:layout_below="@+id/profileIv"
-                android:hint="Full Name"
-                android:padding="10dp"
-                android:drawableStart="@drawable/ic_person_gray"
-                android:drawablePadding="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_below="@+id/profileIv"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/shapre_rect02"
+                android:drawableStart="@drawable/ic_person_gray"
+                android:drawablePadding="5dp"
+                android:hint="Nombre completo"
                 android:inputType="textPersonName|textCapWords"
-                android:background="@drawable/shapre_rect02"/>
+                android:padding="10dp" />
 
             <EditText
                 android:id="@+id/shopNameEt"
-                android:layout_below="@+id/nameEt"
-                android:hint="Shop Name"
-                android:padding="10dp"
-                android:drawableStart="@drawable/ic_store_gray"
-                android:drawablePadding="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_below="@+id/nameEt"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/shapre_rect02"
+                android:drawableStart="@drawable/ic_store_gray"
+                android:drawablePadding="5dp"
+                android:hint="Nombre de la tienda"
                 android:inputType="textPersonName|textCapWords"
-                android:background="@drawable/shapre_rect02"/>
+                android:padding="10dp" />
 
             <EditText
                 android:id="@+id/phoneEt"
-                android:layout_below="@+id/shopNameEt"
-                android:hint="Phone"
-                android:padding="10dp"
-                android:drawableStart="@drawable/ic_phone_gray"
-                android:drawablePadding="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_below="@+id/shopNameEt"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/shapre_rect02"
+                android:drawableStart="@drawable/ic_phone_gray"
+                android:drawablePadding="5dp"
+                android:hint="Telefono"
                 android:inputType="phone"
-                android:background="@drawable/shapre_rect02"/>
+                android:padding="10dp" />
 
             <EditText
                 android:id="@+id/deliveryFeeEt"
-                android:layout_below="@+id/phoneEt"
-                android:hint="Delivery Fee"
-                android:padding="10dp"
-                android:drawableStart="@drawable/ic_local_shipping_gray"
-                android:drawablePadding="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_below="@+id/phoneEt"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/shapre_rect02"
+                android:drawableStart="@drawable/ic_local_shipping_gray"
+                android:drawablePadding="5dp"
+                android:hint="Costo de Entrega"
                 android:inputType="numberDecimal"
-                android:background="@drawable/shapre_rect02"/>
+                android:padding="10dp" />
 
             <LinearLayout
                 android:id="@+id/addressLl"
@@ -127,7 +139,7 @@
                 android:orientation="horizontal">
                 <EditText
                     android:id="@+id/countryEt"
-                    android:hint="Country"
+                    android:hint="Pais"
                     android:padding="10dp"
                     android:drawableStart="@drawable/ic_location_gray"
                     android:drawablePadding="5dp"
@@ -139,7 +151,7 @@
                     android:background="@drawable/shapre_rect02"/>
                 <EditText
                     android:id="@+id/stateEt"
-                    android:hint="State"
+                    android:hint="Estado"
                     android:padding="10dp"
                     android:drawableStart="@drawable/ic_location_gray"
                     android:drawablePadding="5dp"
@@ -151,7 +163,7 @@
                     android:background="@drawable/shapre_rect02"/>
                 <EditText
                     android:id="@+id/cityEt"
-                    android:hint="City"
+                    android:hint="Ciudad"
                     android:padding="10dp"
                     android:drawableStart="@drawable/ic_location_gray"
                     android:drawablePadding="5dp"
@@ -166,7 +178,7 @@
             <EditText
                 android:id="@+id/addressEt"
                 android:layout_below="@+id/addressLl"
-                android:hint="Complete Address"
+                android:hint="Direccion completado"
                 android:padding="10dp"
                 android:drawableStart="@drawable/ic_location_gray"
                 android:drawablePadding="5dp"
@@ -179,7 +191,7 @@
             <EditText
                 android:id="@+id/emailEt"
                 android:layout_below="@+id/addressEt"
-                android:hint="Email"
+                android:hint="Correo"
                 android:padding="10dp"
                 android:drawableStart="@drawable/ic_mail_gray"
                 android:drawablePadding="5dp"
@@ -191,7 +203,7 @@
             <EditText
                 android:id="@+id/passwordEt"
                 android:layout_below="@+id/emailEt"
-                android:hint="Password"
+                android:hint="Contraseña"
                 android:padding="10dp"
                 android:drawableStart="@drawable/ic_lock_gray"
                 android:drawablePadding="5dp"
@@ -203,7 +215,7 @@
             <EditText
                 android:id="@+id/cPasswordEt"
                 android:layout_below="@+id/passwordEt"
-                android:hint="Confirm Password"
+                android:hint="Confirmar Contraseña"
                 android:padding="10dp"
                 android:drawableStart="@drawable/ic_lock_gray"
                 android:drawablePadding="5dp"
@@ -215,7 +227,7 @@
 
             <Button
                 android:id="@+id/registerBtn"
-                android:text="Register"
+                android:text="Registrar"
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:minWidth="120dp"
                 android:layout_centerHorizontal="true"

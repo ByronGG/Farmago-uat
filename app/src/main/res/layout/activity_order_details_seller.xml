@@ -27,10 +27,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="Order Details"
+            android:text="Detalles de Pedido"
             android:textColor="@color/colorWhite"
             android:textSize="20sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <ImageButton
             android:id="@+id/editBtn"
@@ -68,7 +68,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="OrderID"
+                    android:text="ID del pedido"
                     android:textColor="@color/colorBlack"
                     android:textStyle="bold"/>
 
@@ -91,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Date"
+                    android:text="Fecha"
                     android:textColor="@color/colorBlack"
                     android:textStyle="bold"/>
 
@@ -110,12 +110,12 @@
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="24dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Order Status"
+                    android:text="Estado del pedido"
                     android:textColor="@color/colorBlack"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/orderStatusTv"
@@ -135,7 +135,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Buyer Email"
+                    android:text="Correo del comprador"
                     android:textColor="@color/colorBlack"
                     android:textStyle="bold"/>
 
@@ -157,7 +157,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Buyer Phone"
+                    android:text="Telefono del comprador"
                     android:textColor="@color/colorBlack"
                     android:textStyle="bold"/>
 
@@ -180,7 +180,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Items"
+                    android:text="Productos"
                     android:textColor="@color/colorBlack"
                     android:textStyle="bold"/>
 
@@ -202,7 +202,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Amount"
+                    android:text="Cantidad"
                     android:textColor="@color/colorBlack"
                     android:textStyle="bold"/>
 
@@ -224,7 +224,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
-                    android:text="Delivery Address"
+                    android:text="Direccion de entrega"
                     android:textColor="@color/colorBlack"
                     android:textStyle="bold"/>
 

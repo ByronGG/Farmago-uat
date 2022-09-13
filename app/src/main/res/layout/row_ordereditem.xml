@@ -15,8 +15,8 @@
             android:id="@+id/itemTitleTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Item Title"
-            android:textColor="@color/colorBlack"/>
+            android:text="Titulo del producto"
+            android:textColor="@color/colorBlack" />
         <TextView
             android:id="@+id/itemPriceTv"
             android:layout_width="wrap_content"

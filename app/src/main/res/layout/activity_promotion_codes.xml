@@ -25,12 +25,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="Promotion Codes"
+            android:layout_centerInParent="true"
+            android:text="CUPONES"
+            android:textColor="@color/colorWhite"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@color/colorWhite"/>
+            android:textStyle="bold" />
 
         <ImageButton
             android:id="@+id/addPromoBtn"
@@ -58,7 +57,7 @@
             android:layout_weight="1"
             android:background="@drawable/shapre_rect02"
             android:padding="10dp"
-            android:text="All Promotion Codes"/>
+            android:text="Todos los cupones"/>
 
         <ImageButton
             android:id="@+id/filterBtn"

@@ -27,11 +27,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="Shop Reviews"
+            android:layout_centerInParent="true"
+            android:text="Reseñas de la tienda"
             android:textColor="@color/colorWhite"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
     </RelativeLayout>
 
@@ -56,7 +55,7 @@
             android:id="@+id/shopNameTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Shop Name"/>
+            android:text="Nombre de la tienda"/>
 
         <RatingBar
             android:id="@+id/ratingBar"
